@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Hello admin!</title>
+</head>
+<body>
+<div class="row">
+    <label for="yourBudget" class="col-sm-2 col-form-label col-form-label-lg">Your budget</label>
+    <div class="col-auto">
+        <div type="text" id="yourBudget">0</div>
+    </div>
+    <!--        <div class="col-auto">-->
+    <!--            <input class="form-control" type="text" id="yourBudget" value="" aria-label="Disabled input example" disabled readonly>-->
+    <!--        </div>-->
+
+    <label for="yourContribution" class="col-sm-2 col-form-label col-form-label-lg">Your contribution to the budget</label>
+    <div class="col-auto">
+        <div type="text" id="yourContribution">0</div>
+    </div>
+    <!--        <div class="col-auto">-->
+    <!--            <input class="form-control" type="text" id="yourContribution" aria-label="Disabled input example" disabled readonly>-->
+    <!--&lt;!&ndash;            <input class="form-control" type="text" id="yourContribution" value="" aria-label="Disabled input example" disabled readonly>&ndash;&gt;-->
+    <!--        </div>-->
+</div>
+
+<h1>Fulfilled wishes</h1>
+<table id="tovarcomplid" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Product</th>
+        <th>Cost</th>
+        <th>Consumers Name</th>
+        <th>When Creator</th>
+        <th>Approver Name</th>
+        <th>When Approver</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<h1>New wishes</h1>
+<table id="tovarnew" class="table table-striped">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Product</th>
+        <th>Cost</th>
+        <th>Consumers Name</th>
+        <th>When Creator</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+<h1></h1>
+<form action="http://localhost:9999/money.html">
+    <button type="submit" class="btn btn-primary" id="addmoney">Adding capital</button>
+</form>
+
+<h1></h1>
+<form action="http://localhost:9999/adding.html">
+    <button type="submit" class="btn btn-primary" id="adding">Adding a resident</button>
+</form>
+
+<h1></h1>
+<form action="http://localhost:9999/addproduct.html">
+    <button type="submit" class="btn btn-primary" id="addProduct">Add product</button>
+</form>
+
+<h1></h1>
+<form>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary" id="saveApprove">To approve</button>
+        </div>
+        <div class="col-auto">
+            <input type="name" id="approve" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+        <div class="col-auto">
+            <label for="approve" class="col-form-label">Please enter the number of the approved wish!</label>
+        </div>
+    </div>
+</form>
+
+<h1></h1>
+<form>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary" id="deletesWish">Deleting a Wish</button>
+        </div>
+        <div class="col-auto">
+            <input type="name" id="deletes" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+        <div class="col-auto">
+            <label for="deletes" class="col-form-label">Please enter the number of the deleting wish!</label>
+        </div>
+    </div>
+</form>
+
+<h1></h1>
+<form>
+    <button type="submit" class="btn btn-primary" id="output">Output</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+</html>
